@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Data & BI Analyst</title>
+
+  <title>Data & BI Analyst Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* SOLO GARANTIZA QUE NO HAYA SCROLL RARO */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <!-- HERO -->
+  <!-- HERO TIPO GLINT -->
   <section class="hero">
 
     <div class="hero-content">
@@ -18,14 +30,12 @@
       <h1>Data & BI Analyst</h1>
 
       <p>
-        Power BI • SQL • Excel • Dashboards • Business Insights
+        Power BI • SQL • Excel • Data Visualization • Business Insights
       </p>
 
       <div class="hero-buttons">
 
-        <a href="#projects" class="btn primary">
-          Ver proyectos
-        </a>
+        <a href="#projects" class="btn primary">Ver proyectos</a>
 
         <a href="https://www.linkedin.com" target="_blank" class="btn secondary">
           LinkedIn
@@ -37,26 +47,30 @@
 
   </section>
 
-  <!-- SECCIÓN PROYECTOS -->
+  <!-- PROYECTOS -->
   <section id="projects" class="projects">
 
-    <h2>Proyectos</h2>
+    <div class="container">
 
-    <div class="project-grid">
+      <h2>Proyectos</h2>
 
-      <div class="card">
-        <h3>Dashboard de Ventas</h3>
-        <p>Análisis de KPIs y rendimiento comercial.</p>
-      </div>
+      <div class="project-grid">
 
-      <div class="card">
-        <h3>Análisis de Clientes</h3>
-        <p>Segmentación y comportamiento de usuarios.</p>
-      </div>
+        <div class="card">
+          <h3>Dashboard Ventas</h3>
+          <p>Análisis de KPIs comerciales y tendencias de ingresos.</p>
+        </div>
 
-      <div class="card">
-        <h3>Reportes Financieros</h3>
-        <p>Visualización de ingresos y costos.</p>
+        <div class="card">
+          <h3>Segmentación de Clientes</h3>
+          <p>Clustering y comportamiento de usuarios.</p>
+        </div>
+
+        <div class="card">
+          <h3>Reporte Financiero</h3>
+          <p>Visualización de métricas clave de negocio.</p>
+        </div>
+
       </div>
 
     </div>
