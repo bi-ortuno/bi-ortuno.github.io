@@ -110,7 +110,7 @@
 }
 
 /* CASOS DE ESTUDIO (3 COLUMNAS) */
-.cases-grid {
+/*.cases-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -133,7 +133,7 @@
   .hero h1 {
     font-size: 2.2rem;
   }
-}
+}*/
 
 
 
