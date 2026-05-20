@@ -8,9 +8,13 @@
 /* HERO */
 .hero {
   height: 100vh;
+  width: 100%;
+
   background-image: url("images/metal.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
   position: relative;
 
   display: flex;
@@ -20,14 +24,12 @@
   color: white;
 }
 
-.hero-overlay {
+/* OVERLAY (CLAVE: NO OPACO) */
+.hero::before {
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.25),
-    rgba(0,0,0,0.65)
-  );
+  background: rgba(0,0,0,0.35);
 }
 
 .hero-content {
@@ -39,7 +41,7 @@
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .hero p {
@@ -48,13 +50,13 @@
   margin-bottom: 30px;
 }
 
-/* BOTÓN */
+/* BOTON */
 .btn {
-  padding: 12px 24px;
+  padding: 12px 22px;
   background: white;
   color: black;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
 }
 
@@ -69,11 +71,6 @@
   color: white;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
 /* GRID */
 .grid {
   display: flex;
@@ -83,34 +80,23 @@ h2 {
 }
 
 .card {
-  width: 280px;
+  width: 260px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
 
-/* TIMELINE */
-.timeline {
+/* CASOS */
+.cases {
+  max-width: 900px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 800px;
-  margin: auto;
 }
 
 .case {
-  padding: 20px;
-  border-left: 3px solid white;
   text-align: left;
-}
-
-/* CENTRADO */
-.center {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.center-text {
-  max-width: 700px;
-  margin: auto;
+  border-left: 3px solid white;
+  padding-left: 15px;
 }
