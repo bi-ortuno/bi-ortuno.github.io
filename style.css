@@ -134,3 +134,73 @@
     font-size: 2.2rem;
   }
 }
+
+
+
+#what {
+  background: #ffffff;
+  color: #111;
+  padding: 120px 20px;
+}
+
+/* SUBTITULO GLINT STYLE */
+#what .sub-title {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* TITULO GRANDE GLINT */
+#what .big-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  max-width: 850px;
+  margin: 0 auto 25px auto;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* DESCRIPCION */
+#what .description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #666;
+  max-width: 750px;
+  margin: 0 auto 70px auto;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* GRID GLINT STYLE */
+#what .grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARDS MINIMALISTAS */
+#what .card {
+  width: 280px;
+  padding: 30px 25px;
+  border: none;
+  text-align: center;
+}
+
+/* TITULO CARD */
+#what .card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* TEXTO CARD */
+#what .card p {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.6;
+}
