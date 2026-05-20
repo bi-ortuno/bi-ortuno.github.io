@@ -1,4 +1,6 @@
-/* RESET */
+/* =========================
+   RESET GENERAL
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,48 +8,59 @@
   font-family: Arial, sans-serif;
 }
 
-/* HERO */
+body {
+  background: #111;
+  color: white;
+}
+
+/* =========================
+   HERO (GLINT STYLE)
+========================= */
 .hero {
   height: 100vh;
   width: 100%;
 
-  background-image: url("images/metal.jpg"); /* tu imagen */
+  /* imagen de fondo */
+  background-image: url("images/metal.jpg"); /* cambia aquí si usas desierto */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
-/* OVERLAY GLINT */
+/* OVERLAY SUAVE (CLAVE) */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
 
+  /* GLINT REAL: suave, NO negro sólido */
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.55)
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.55)
   );
 }
 
-/* TEXTO HERO */
+/* CONTENIDO */
 .hero-content {
   position: relative;
   z-index: 1;
-  color: white;
   max-width: 800px;
   padding: 20px;
 }
 
 .hero h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -57,30 +70,56 @@
   opacity: 0.85;
 }
 
-/* BOTÓN */
-.btn {
+/* BOTONES */
+.hero-buttons {
   margin-top: 30px;
-  display: inline-block;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
 
+/* BOTÓN BASE */
+.btn {
   padding: 12px 24px;
-  border: 1px solid white;
-  color: white;
+  border-radius: 8px;
   text-decoration: none;
-
+  font-weight: bold;
   transition: 0.3s ease;
 }
 
-.btn:hover {
+/* PRIMARIO */
+.primary {
   background: white;
   color: black;
 }
 
-/* PROYECTOS */
+.primary:hover {
+  background: #e6e6e6;
+}
+
+/* SECUNDARIO */
+.secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+.secondary:hover {
+  background: white;
+  color: black;
+}
+
+/* =========================
+   PROYECTOS
+========================= */
 .projects {
   padding: 80px 20px;
   background: #111;
-  color: white;
   text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .projects h2 {
@@ -89,19 +128,16 @@
 }
 
 /* GRID */
-.grid {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-
-  max-width: 1000px;
-  margin: auto;
 }
 
-/* CARDS */
+/* CARD */
 .card {
   background: #1a1a1a;
-  padding: 25px;
+  padding: 20px;
   border-radius: 10px;
   transition: 0.3s;
 }
