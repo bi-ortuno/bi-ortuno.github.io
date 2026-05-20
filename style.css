@@ -23,7 +23,7 @@
 .hero .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.60);
+  background: rgba(0,0,0,0.70);
 }
 
 /* CONTENIDO HERO */
