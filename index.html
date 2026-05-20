@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio BI</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0b0b0c;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 72px;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #b8b8b8;
+  max-width: 750px;
+  margin: 10px auto;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* SECCIONES */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 20px;
+}
+
+h2 {
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+/* GRID */
+.stats, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARDS */
+.stat, .card {
+  background: #16161a;
+  padding: 25px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.stat:hover, .card:hover {
+  transform: translateY(-6px);
+  background: #1f1f25;
+}
+
+/* TEXTO */
+p {
+  color: #b8b8b8;
+  line-height: 1.6;
+}
+
+/* CONTACTO */
+.contact {
+  text-align: center;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero fade">
+  <h1>Data & BI Analyst</h1>
+  <p>
+    Me enfoco en transformar datos en insights de negocio para mejorar la toma de decisiones empresariales.
+  </p>
+
+  <a class="btn" href="#casos">Ver proyectos</a>
+</section>
+
+<!-- QUÉ HAGO -->
+<section class="fade">
+  <h2>Qué hago</h2>
+
+  <div class="stats">
+
+    <div class="stat">
+      <h3>Insights de negocio</h3>
+      <p>Transformación de datos en información accionable.</p>
+    </div>
+
+    <div class="stat">
+      <h3>KPIs</h3>
+      <p>Monitoreo de rendimiento y análisis de métricas clave.</p>
+    </div>
+
+    <div class="stat">
+      <h3>Dashboards</h3>
+      <p>Visualización de datos en Power BI y Looker Studio.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CASOS -->
+<section id="casos" class="fade">
+  <h2>Casos de estudio</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Análisis de ventas</h3>
+      <p><b>Problema:</b> Caída de ingresos no visible en reportes.</p>
+      <p><b>Análisis:</b> Dashboard en Power BI con tendencias de ventas y KPIs.</p>
+      <p><b>Resultado:</b> Identificación de factores clave de disminución del 18% en ingresos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Retención de clientes</h3>
+      <p><b>Problema:</b> Alta pérdida de clientes sin segmentación clara.</p>
+      <p><b>Análisis:</b> Segmentación basada en comportamiento de clientes.</p>
+      <p><b>Resultado:</b> Mejora en la comprensión de patrones de retención.</p>
+    </div>
+
+    <div class="card">
+      <h3>Dashboard de marketing</h3>
+      <p><b>Problema:</b> Falta de visibilidad del retorno de inversión.</p>
+      <p><b>Análisis:</b> Reporte interactivo en Looker Studio.</p>
+      <p><b>Resultado:</b> Mejora en la toma de decisiones basada en datos.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- HERRAMIENTAS -->
+<section class="fade">
+  <h2>Herramientas</h2>
+  <p>Power BI • Looker Studio • Excel • SQL</p>
+</section>
+
+<!-- SOBRE MÍ -->
+<section class="fade">
+  <h2>Sobre mí</h2>
+  <p>
+    Soy Data & BI Analyst enfocada en convertir datos complejos en información clara y útil para la toma de decisiones empresariales.
+  </p>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact fade">
+  <h2>Contacto</h2>
+  <p>Disponible para oportunidades como Analista de Datos / BI</p>
+
+  <a class="btn" href="https://www.linkedin.com" target="_blank">
+    Conectar en LinkedIn
+  </a>
+</section>
+
+</body>
+</html>
