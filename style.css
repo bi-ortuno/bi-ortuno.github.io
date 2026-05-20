@@ -208,10 +208,8 @@
 #what .big-title::after {
   content: "";
   display: block;
-
-  width: 80px;
-  height: 2px;
+  width: 200px;
+  height: 1px;
   background: #c5c5c5;
-
   margin: 25px auto 0 auto;
 }
