@@ -213,3 +213,85 @@
   background: #c5c5c5;
   margin: 25px auto 0 auto;
 }
+
+/* CASOS DE ESTUDIO (3 COLUMNAS) */
+.case-study {
+  background: #fff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.case-study .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* SUBTITLE */
+.case-study .sub-title {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.case-study .big-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  max-width: 850px;
+  margin: 0 auto 25px auto;
+  line-height: 1.4;
+}
+
+/* LINE */
+.case-study .line {
+  width: 80px;
+  height: 2px;
+  background: #d0d0d0;
+  margin: 25px auto;
+}
+
+/* DESCRIPTION */
+.case-study .description {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.case-study .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* ITEM */
+.case-study .service h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.case-study .service p {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .case-study .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
