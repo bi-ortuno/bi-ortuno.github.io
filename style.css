@@ -15,10 +15,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
   color: white;
 }
 
-/* OVERLAY SUAVE (NO TAPA IMAGEN) */
+/* OVERLAY (CAMBIO 2) */
 .hero .overlay {
   position: absolute;
   inset: 0;
@@ -43,9 +44,11 @@
   opacity: 0.7;
 }
 
+/* CAMBIO 3: TEXTO MÁS FINO */
 .hero p {
   font-size: 1.1rem;
-  opacity: 0.9;
+  font-weight: 300;
+  opacity: 0.95;
   margin-bottom: 25px;
 }
 
