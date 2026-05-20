@@ -148,7 +148,7 @@
   text-align: center;
   letter-spacing: 3px;
   font-size: 0.75rem;
-  color: #888;
+  color: #000;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -167,7 +167,7 @@
 #what .description {
   font-size: 1.1rem;
   font-weight: 300;
-  color: #666;
+  color: #000;
   max-width: 750px;
   margin: 0 auto 70px auto;
   line-height: 1.8;
@@ -201,6 +201,6 @@
 /* TEXTO CARD */
 #what .card p {
   font-size: 0.95rem;
-  color: #777;
+  color: #000;
   line-height: 1.6;
 }
