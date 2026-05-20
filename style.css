@@ -8,7 +8,7 @@
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("images/metal.jpg") center/cover no-repeat;
+  background: url("images/hero.webp") center/cover no-repeat;
   position: relative;
 
   display: flex;
