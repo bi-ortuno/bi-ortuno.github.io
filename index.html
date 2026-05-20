@@ -16,47 +16,102 @@ body {
 
   
 /* HERO */
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO PRINCIPAL */
 .hero {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  /*  IMAGEN DE FONDO */
-  background-image: url("images/hero.webp");
+  background-image: url("images/metal.jpg"); /* cambia por tu imagen */
   background-size: cover;
   background-position: center;
   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  overflow: hidden;
 }
 
-/* OVERLAY OSCURO ESTILO APPLE */
+/* OVERLAY (OSCURO + PRO) */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.85)
+  );
 }
 
-/* CONTENIDO ENCIMA */
+/* CONTENIDO */
 .hero-content {
   position: relative;
-  z-index: 2;
-  padding: 20px;
+  z-index: 1;
+  color: white;
   max-width: 800px;
+  padding: 20px;
 }
 
+/* TITULO */
 .hero h1 {
-  font-size: 72px;
-  letter-spacing: -2px;
-  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
+/* SUBTITULO */
 .hero p {
-  font-size: 20px;
-  color: #d0d0d0;
-  margin: 15px auto;
-  line-height: 1.5;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* BOTONES */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* BOTÓN BASE */
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* BOTÓN PRINCIPAL */
+.primary {
+  background: white;
+  color: black;
+}
+
+.primary:hover {
+  background: #e6e6e6;
+}
+
+/* BOTÓN SECUNDARIO */
+.secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+.secondary:hover {
+  background: white;
+  color: black;
 }
 
 .btn {
